@@ -5,10 +5,52 @@
         <meta name="description" content="html buttons">
         <meta name="author" content="Rose">
         <title>HTML buttons</title>
+        <style>
+            .subscribe{
+                background-color: rgb(199, 2, 2);
+                color: white;
+                padding: 8px;
+                border: none;
+                margin-right: 8px;
+            }
+            .subscribe:hover{
+                background-color: rgb(248, 113, 113);
+            }
+            .subscribe:active{
+                background-color: rgb(8, 104, 168);
+            }
+            .like{
+                background-color: white;
+                color: blue;
+                padding: 6px;
+                border: 1px solid rgb(5, 5, 189);
+                margin-right: 8px;
+                border-radius: 5px;
+                transition: background-color 1s, color 1s;
+            }
+            .like:hover{
+                color: white;
+                background-color: blue;
+            }
+            .like:active{
+                background-color: aqua;
+            }
+            .tweet{
+                background-color: blue;
+                color: white;
+                padding: 6px;
+                border: 1px solid rgb(5, 5, 189);
+                border-radius: 10px;
+                transition: box-shadow 0.75s;
+            }
+            .tweet:hover{
+                box-shadow: 2px 2px 5px black;
+            }
+        </style>
     </head>
     <body>
-        <button>SUBSCRIBE</button>
-        <button>LIKE</button>
-        <button>TWEET</button>
+        <button class="subscribe">SUBSCRIBE</button>
+        <button class="like">JOIN</button>
+        <button class="tweet">TWEET</button>
     </body>
 </html>
